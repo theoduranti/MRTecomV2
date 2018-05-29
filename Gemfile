@@ -16,6 +16,7 @@ gem 'bootsnap'
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'stripe'
+gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'sqlite3'

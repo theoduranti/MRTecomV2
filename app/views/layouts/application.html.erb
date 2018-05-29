@@ -3,6 +3,17 @@
   <head>
     <title>MRTecomV1</title>
     <%= csrf_meta_tags %>
+
+    <!-- Custom styles for this template -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-freelancer/css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-freelancer/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-freelancer/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,6 +21,7 @@
   </head>
 
   <body>
+    <%= render "layouts/navbar" %>
     <%= yield %>
   </body>
 </html>
