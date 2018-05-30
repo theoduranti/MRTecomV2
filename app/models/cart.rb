@@ -1,4 +1,5 @@
 class Cart < ApplicationRecord
-  belongs_to :user, index: {unique: true}, foreign_key: true
-  has_and_belongs_to_many :items, index: true
+  belongs_to :user
+  has_many :cart_items, dependent: :destroy
+  has_many :added_items, through: :cart_items
 end

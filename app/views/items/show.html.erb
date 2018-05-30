@@ -12,3 +12,8 @@
   <strong>Price</strong>
   <%= @item.price %>
 </p>
+
+<% if user_signed_in? %>
+  <p class='button_list_table'>
+  <%= link_to "Ajouter au panier", mon_panier_path, class: "btn btn-success" %> </p><br/><br/><br/>
+<% end %>`
