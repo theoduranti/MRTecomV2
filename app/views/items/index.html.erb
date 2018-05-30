@@ -1,3 +1,7 @@
+<main role="main">
+<div class="album py-5 bg-light">
+<div class="container">
+
 <h1>Voici nos chats</h1>
 <% @items = Item.all %>
 <% @items.each do |item| %>
@@ -6,7 +10,13 @@
     <%= item.price %><br/>
     <img src="<%= item.image_url %>", class: "img-responsive">
     <p class='button_list_table'>
-    <%= link_to "Détails", item_path(item), class: "btn btn-success" %> </p><br/><br/><br/>
+    <%= link_to "Détails", item_path(item), class: "btn btn-success" %></p><br/><br/><br/>
 <% end %>
+
+</div>
+</div>
+
+</main>
+
 
 
